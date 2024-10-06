@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_28pt-Regular.ttf");
+}
+
+* {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+
+  --lightmode-color-background: #fff;
+  --lightmode-color-text: #000;
+
+  --lightmode-color-green: #B5FFCE;
+  --lightmode-color-yellow: #FFFA89;
+  --lightmode-color-pink:#FFB5F3;
+  --lightmode-color-purple:#C4B5FF;
+  --lightmode-color-footer:#EBFF00;
+
+}
