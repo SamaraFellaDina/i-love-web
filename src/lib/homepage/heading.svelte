@@ -12,6 +12,9 @@
 
 <style>
 
+article {
+  padding: var(--average-padding);
+}
 article section {
   display: flex;
   justify-content: space-between;

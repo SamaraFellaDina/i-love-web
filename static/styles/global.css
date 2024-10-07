@@ -4,8 +4,10 @@
 }
 
 * {
+
+  --lightmode-color-black:#000;
   --lightmode-color-background: #fff;
-  --lightmode-color-text: #000;
+  --lightmode-color-text: var(--lightmode-color-black);
 
   --lightmode-color-green: #B5FFCE;
   --lightmode-color-yellow: #FFFA89;
@@ -26,7 +28,6 @@ body {
 
 main {
   --average-padding: 2em;
-  padding: var(--average-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
