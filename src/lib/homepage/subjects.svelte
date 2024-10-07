@@ -46,10 +46,10 @@
     --border-style: solid;
     --border-color: var(--lightmode-color-black);
     --border-width: 2px;
+
     border-top-style: var(--border-style);
     border-color: var(--border-color);
     border-width: var(--border-width);
-
     padding: var(--average-padding);
   }
 
@@ -70,7 +70,7 @@
   }
 
   ul li:last-child{
-    border-top-style: var(--border-style);
+    border-bottom-style: var(--border-style);
     border-color: var(--border-color);
     border-width: var(--border-width);
   }
