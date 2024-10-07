@@ -1,10 +1,14 @@
 <script>
-    import {Heading, Subjects} from '$lib'   
+    import { 
+      Heading,
+      Subjects,
+      Icons
+    } from '$lib'   
 </script>
 
 <main>
   <Heading />
-  <Subjects />
+  <Subjects {Icons}/>
 </main>
 
 <style>

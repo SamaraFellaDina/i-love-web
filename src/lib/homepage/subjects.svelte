@@ -1,31 +1,40 @@
 <script>
-
+  import Icons from '$lib/icons.svelte';
 </script>
 
 <ul>
-
   <li>
-      <h2>projects</h2>
+      <h2>Projects</h2>
       <p>all my Github projects can be found here with some more information about the project, code and things like issues</p>
-      <a href="/">link</a>
+      <a href="/">
+        <Icons name = 'arrow-right'/>
+      </a>
   </li>
 
   <li>
-      <h2>learning journal</h2>
+      <h2>Learning journal</h2>
       <p>a daily to weekly journal about my progress inside the projects.</p>
-      <a href="/">link</a>
+      <a href="/">
+        <svg>
+        <Icons name = 'arrow-right'/>
+        </svg>
+      </a>
   </li>
 
   <li>
-      <h2>we love web</h2>
+      <h2>We love web</h2>
       <p>The place to find about presentations and the learning envenvironment  outside of the material that has been given by school</p>
-      <a href="/">link</a>
+      <a href="/">
+        <Icons name = 'arrow-right'/>
+      </a>
   </li>
 
   <li>
-      <h2>about me</h2>
+      <h2>About me</h2>
       <p>Who is the person behind all of this? Find more here!</p>
-      <a href="/">link</a>
+      <a href="/">
+        <Icons name = 'arrow-right'/>
+      </a>
   </li>
 
 </ul>
@@ -73,5 +82,15 @@
     border-bottom-style: var(--border-style);
     border-color: var(--border-color);
     border-width: var(--border-width);
+  }
+
+  ul li a {
+    --ratio:2em;
+    width: var(--ratio);
+    height: var(--ratio);
+  }
+  ul li h2,
+  ul li p {
+    margin: 1em 0;
   }
 </style>

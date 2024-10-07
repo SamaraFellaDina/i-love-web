@@ -1,7 +1,7 @@
 <script>
   import {page} from '$app/stores'
 
-  console.log($page.status)
+  // console.log($page.status)
 </script>
 
 <main>
