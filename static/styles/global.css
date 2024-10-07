@@ -4,7 +4,6 @@
 }
 
 * {
-
   --lightmode-color-background: #fff;
   --lightmode-color-text: #000;
 
@@ -14,11 +13,23 @@
   --lightmode-color-purple:#C4B5FF;
   --lightmode-color-footer:#EBFF00;
 
-  --lightmode-color-rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(27,255,0,1) 25%, rgba(8,129,255,1) 50%, rgba(150,0,255,1) 75%, rgba(252,0,255,1) 100%);
+  --lightmode-color-rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(249,255,0,1) 25%, rgba(8,129,255,1) 50%, rgba(150,0,255,1) 75%, rgba(252,0,255,1) 100%);
 
   --font-family:"Inter", Arial, Helvetica, sans-serif;
   font-family: var(--font-family);
+}
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  --average-padding: 2em;
+  padding: var(--average-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1,

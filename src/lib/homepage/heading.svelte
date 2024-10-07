@@ -22,6 +22,18 @@ article section div {
   background: var(--lightmode-color-footer);
   background: var(--lightmode-color-rainbow-gradient);
   width: 100%;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 100%;
+  }
 }
 
 </style>
