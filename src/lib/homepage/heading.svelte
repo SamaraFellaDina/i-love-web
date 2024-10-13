@@ -21,11 +21,16 @@ article section {
   gap: 1em;
 }
 
+article section h1 {
+  --heading-margin:.2em;
+  margin-block-start: var(--heading-margin);
+  margin-block-end: var(--heading-margin);
+}
 article section div {
   background: var(--lightmode-color-footer);
   background: var(--lightmode-color-rainbow-gradient);
   width: 100%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 5s ease infinite alternate;
   background-size: 400% 400%;
 }
 

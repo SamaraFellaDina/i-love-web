@@ -23,5 +23,6 @@
   main p {
     color: var(--lightmode-color-pink);
     font-size: 20px;
+
   }
 </style>

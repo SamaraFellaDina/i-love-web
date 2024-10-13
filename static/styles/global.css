@@ -26,8 +26,13 @@ body {
   margin: 0;
 }
 
-main {
+header,
+main,
+footer {
   --average-padding: 2em;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;

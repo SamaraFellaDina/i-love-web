@@ -5,7 +5,7 @@
 <ul>
   <li>
       <h2>Projects</h2>
-      <p>all my Github projects can be found here with some more information about the project, code and things like issues</p>
+      <p>All my Github projects can be found here with some more information about the project, code and things like issues</p>
       <a href="/">
         <Icons name = 'arrow-right'/>
       </a>
@@ -13,11 +13,9 @@
 
   <li>
       <h2>Learning journal</h2>
-      <p>a daily to weekly journal about my progress inside the projects.</p>
+      <p>A daily to weekly journal about my progress inside the projects.</p>
       <a href="/">
-        <svg>
         <Icons name = 'arrow-right'/>
-        </svg>
       </a>
   </li>
 
@@ -36,11 +34,10 @@
         <Icons name = 'arrow-right'/>
       </a>
   </li>
-
 </ul>
 
 <style>
-  ul{
+  ul {
     display: block;
     list-style-type: none;
     margin-block-start: 0;
@@ -55,6 +52,7 @@
     --border-style: solid;
     --border-color: var(--lightmode-color-black);
     --border-width: 2px;
+    --min-height: 5em;
 
     border-top-style: var(--border-style);
     border-color: var(--border-color);
@@ -77,7 +75,6 @@
   ul li:nth-child(4){
     background-color: var( --lightmode-color-purple);
   }
-
   ul li:last-child{
     border-bottom-style: var(--border-style);
     border-color: var(--border-color);
@@ -85,9 +82,12 @@
   }
 
   ul li a {
-    --ratio:2em;
-    width: var(--ratio);
+    --ratio: 2em;
+    display: flex;
+    width: 100%;
     height: var(--ratio);
+    flex-direction: row;
+    justify-content: flex-end;
   }
   ul li h2,
   ul li p {
