@@ -1,5 +1,5 @@
 <script>
-
+    import {Heading} from '$lib'   
 </script>
 
 <body>
@@ -8,13 +8,7 @@
 </header>
 
 <main>
-    <section>
-        <h1>archive</h1>
-        <p>
-            Welcome to my archive. Where you can find journals, 
-            notes, projects and even more! Take a look around :-)
-        </p>
-    </section>
+  <Heading />
     <ul>
         <li>
             <h2>projects</h2>
