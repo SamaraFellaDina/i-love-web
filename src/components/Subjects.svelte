@@ -1,37 +1,55 @@
 <script>
-  import Icons from '../components/Icons.svelte';
+  import Icons from './libraries/Icons.svelte';
+  import data from '../assets/data/Data.json';
+  const Projects = data.archive[0];
+  const LearningJournal = data.archive[1];
+  const WeLoveWeb = data.archive[2];
+  const AboutMe = data.archive[3];
+
 </script>
 
 <ul>
   <li>
-      <h2>Projects</h2>
-      <p>All my Github projects can be found here with some more information about the project, code and things like issues</p>
+      <h2>{Projects.title}</h2>
+      <p>{Projects.description}</p>
       <a href="/">
-        <Icons name = 'arrow-right'/>
+        <Icons 
+        name = 'arrow-right'
+        color = 'var(--lightmode-color-background)'
+        />
       </a>
   </li>
 
   <li>
-      <h2>Learning journal</h2>
-      <p>A daily to weekly journal about my progress inside the projects.</p>
-      <a href="src/pages/LearningJournal/LearningJournal.astro">
-        <Icons name = 'arrow-right'/>
+      <h2>{LearningJournal.title}</h2>
+      <p>{LearningJournal.description}</p>
+      <a href="/">
+        <Icons 
+        name = 'arrow-right'
+        color = 'var(--lightmode-color-background)'
+        />
       </a>
   </li>
 
   <li>
-      <h2>We love web</h2>
-      <p>The place to find about presentations and the learning envenvironment  outside of the material that has been given by school</p>
+    <h2>{WeLoveWeb.title}</h2>
+    <p>{WeLoveWeb.description}</p>
       <a href="/">
-        <Icons name = 'arrow-right'/>
+        <Icons 
+        name = 'arrow-right'
+        color = 'var(--lightmode-color-background)'
+        />
       </a>
   </li>
 
   <li>
-      <h2>About me</h2>
-      <p>Who is the person behind all of this? Find more here!</p>
+    <h2>{AboutMe.title}</h2>
+    <p>{AboutMe.description}</p>
       <a href="/">
-        <Icons name = 'arrow-right'/>
+        <Icons 
+        name = 'arrow-right'
+        color = 'var(--lightmode-color-background)'
+        />
       </a>
   </li>
 </ul>
@@ -83,11 +101,13 @@
 
   ul li a {
     --ratio: 2em;
+    padding: .5em;
     display: flex;
-    width: 100%;
+    width: var(--ratio);
     height: var(--ratio);
     flex-direction: row;
     justify-content: flex-end;
+    background-color: var(--lightmode-color-black);
   }
   ul li h2,
   ul li p {
