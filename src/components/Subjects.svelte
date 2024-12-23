@@ -3,18 +3,37 @@
   import data from '../assets/data/Data.json';
   const archive = data.archive;
 
+  const icons = [
+    'book',
+    'code',
+    'cursor',
+    'smile'
+  ]
+
 </script>
 <ul>
-  {#each archive as {title, description, slug}}
+  {#each archive as {title, description, slug}, index}
     <li>
+      <div>
+        <Icons 
+        Name ={icons[index]}
+        Color = 'var(--lightmode-color-background)'
+        Height = '70'
+        Width = '70'
+        />
+      </div>
+
       <section>
         <h2>{title}.</h2>
         <p>{description}</p>
       </section>
+
       <a href="/{slug}">
         <Icons 
-        name = 'arrow-right'
-        color = 'var(--lightmode-color-background)'
+        Name  = 'arrow-right'
+        Color = 'var(--lightmode-color-background)'
+        Height = '50'
+        Width = '50'
         />
       </a>
     </li>
@@ -43,6 +62,8 @@
     border-width: var(--border-width);
     display: flex;
     justify-content: space-between;
+    min-height: 20em;
+
   }
 
   ul li:nth-child(1){
@@ -66,10 +87,18 @@
     border-width: var(--border-width);
   }
 
+  ul li div {
+    display: none;
+
+    @media (min-width: 600px) {
+      display: block;
+      padding: var(--average-padding);
+    }
+  }
+
   ul li section {
     display: flex;
     flex-direction: column;
-    min-height: 15em;
   }
   
   ul li section h2,
@@ -87,7 +116,7 @@
   }
 
   ul li a {
-    --ratio: 2em;
+    --ratio: 3em;
     width: var(--ratio);
     height: var(--ratio);
     padding: .5em;
@@ -98,4 +127,5 @@
 
     background-color: var(--lightmode-color-black);
   }
+
 </style>
