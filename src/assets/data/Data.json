@@ -1,6 +1,7 @@
 {"archive":[
   {
     "title":"Projects",
+    "slug":"projects",
     "description":"All my Github projects can be found here with some more information about the project, code and things like issues",
     "link":"https://github.com/SamaraFellaDina/future-ready-design",
     "Assets":[
@@ -68,6 +69,7 @@
 
   {
     "title":"Learning Journal",
+    "slug":"learning-journal",
     "description":"A daily to weekly journal about my progress inside the projects.",
     "Assets":[
       {"Justus-Babbel-User-needs": [{
@@ -82,6 +84,7 @@
 
   {
     "title":"We Love Web",
+    "slug":"we-love-web",
     "description":"The place to find about presentations and the learning envenvironment  outside of the material that has been given by school",
     "Assets":[
       {"title": [{
@@ -94,6 +97,7 @@
 
   {
     "title":"About me",
+    "slug":"about-me",
     "description":"Who is the person behind all of this? Find more here!",
     "Assets":[
       {"title": [{

@@ -1,57 +1,22 @@
 <script>
   import Icons from './libraries/Icons.svelte';
   import data from '../assets/data/Data.json';
-  const Projects = data.archive[0];
-  const LearningJournal = data.archive[1];
-  const WeLoveWeb = data.archive[2];
-  const AboutMe = data.archive[3];
+  const archive = data.archive;
 
 </script>
-
 <ul>
-  <li>
-      <h2>{Projects.title}</h2>
-      <p>{Projects.description}</p>
-      <a href="/">
+  {#each archive as {title, description, slug}}
+    <li>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <a href="/{slug}">
         <Icons 
         name = 'arrow-right'
         color = 'var(--lightmode-color-background)'
         />
       </a>
-  </li>
-
-  <li>
-      <h2>{LearningJournal.title}</h2>
-      <p>{LearningJournal.description}</p>
-      <a href="/">
-        <Icons 
-        name = 'arrow-right'
-        color = 'var(--lightmode-color-background)'
-        />
-      </a>
-  </li>
-
-  <li>
-    <h2>{WeLoveWeb.title}</h2>
-    <p>{WeLoveWeb.description}</p>
-      <a href="/">
-        <Icons 
-        name = 'arrow-right'
-        color = 'var(--lightmode-color-background)'
-        />
-      </a>
-  </li>
-
-  <li>
-    <h2>{AboutMe.title}</h2>
-    <p>{AboutMe.description}</p>
-      <a href="/">
-        <Icons 
-        name = 'arrow-right'
-        color = 'var(--lightmode-color-background)'
-        />
-      </a>
-  </li>
+    </li>
+  {/each}
 </ul>
 
 <style>
