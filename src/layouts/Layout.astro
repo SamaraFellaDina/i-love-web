@@ -16,12 +16,13 @@ import {
 
 		<title>Astro Basics</title>
 	</head>
-
-	<Header />
 	<body>
-		<slot />
+		<Header />
+			<main>
+				<slot />
+			</main>
+		<Footer />
 	</body>
-	<Footer />
 </html>
 
 

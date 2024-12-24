@@ -6,6 +6,9 @@ export { default as Subjects } from './components/Subjects.svelte'
 export { default as Icons } from './components/libraries/Icons.svelte'
 export { default as Navigation } from './components/Navigation.svelte'
 
+export { default as Layout } from './layouts/Layout.astro'
+
+export { default as Archive } from './assets/data/Data.json'
 
 
 

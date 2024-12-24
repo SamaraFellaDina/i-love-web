@@ -14,10 +14,10 @@
   --lightmode-color-background: #fff;
   --lightmode-color-text: var(--lightmode-color-black);
 
-  --lightmode-color-green: #B5FFCE;
-  --lightmode-color-yellow: #FFFA89;
-  --lightmode-color-pink:#FFB5F3;
-  --lightmode-color-purple:#C4B5FF;
+  --lightmode-color-projects: #B5FFCE;
+  --lightmode-color-learning-journal: #FFFA89;
+  --lightmode-color-we-love-web:#FFB5F3;
+  --lightmode-color-about-me:#C4B5FF;
   --lightmode-color-layout:#EBFF00;
 
   --average-padding: 2em;
@@ -37,12 +37,6 @@ body {
   margin: 0;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 h1,
 h2,
 h3,
@@ -55,4 +49,8 @@ h6 {
 
 h1 {
   font-size: var(--h1-font-size);
+}
+
+a {
+  cursor: pointer;
 }

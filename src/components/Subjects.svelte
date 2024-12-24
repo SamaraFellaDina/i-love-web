@@ -1,7 +1,6 @@
 <script>
-  import Icons from './libraries/Icons.svelte';
-  import data from '../assets/data/Data.json';
-  const archive = data.archive;
+  import { Archive, Icons } from '../index.js';
+  const data = Archive.archive;
 
   const icons = [
     'book',
@@ -9,10 +8,10 @@
     'cursor',
     'smile'
   ]
-
 </script>
+
 <ul>
-  {#each archive as {title, description, slug}, index}
+  {#each data as {title, description, slug}, index}
     <li>
       <div>
         <Icons 
@@ -28,7 +27,7 @@
         <p>{description}</p>
       </section>
 
-      <a href="/{slug}">
+      <a href="/subjects/{slug}">
         <Icons 
         Name  = 'arrow-right'
         Color = 'var(--lightmode-color-background)'
@@ -67,19 +66,19 @@
   }
 
   ul li:nth-child(1){
-    background-color: var( --lightmode-color-green);
+    background: var( --lightmode-color-projects);
   }
 
   ul li:nth-child(2){
-    background-color: var( --lightmode-color-yellow);
+    background: var( --lightmode-color-learning-journal);
   }
 
   ul li:nth-child(3){
-    background-color: var( --lightmode-color-pink);
+    background: var( --lightmode-color-we-love-web);
   }
 
   ul li:nth-child(4){
-    background-color: var( --lightmode-color-purple);
+    background: var( --lightmode-color-about-me);
   }
   ul li:last-child{
     border-bottom-style: var(--border-style);

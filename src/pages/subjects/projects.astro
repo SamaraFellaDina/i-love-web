@@ -1,0 +1,27 @@
+---
+import { Layout, Archive } from '../../index.js';
+const data = Archive.archive[0]
+console.log(data.Assets[0])
+---
+
+<Layout>
+  <section>
+    <a href="/">back</a>
+    <h1>{data.title}</h1>
+    <p>{data.description}</p>
+
+    <ul>
+      {#each data as {data.Assets}}
+      <li>
+        {data.Assets}
+      </li>
+      {/each}
+    </ul>
+  </section>
+</Layout>
+
+<style>
+  section{
+    background: var(--lightmode-color-projects);
+  }
+</style>
