@@ -3,6 +3,11 @@
   src: url("../fonts/Inter_28pt-Regular.ttf");
 }
 
+@font-face {
+  font-family: "PlayFair Display";
+  src: url("../fonts/PlayfairDisplay-SemiBoldItalic.ttf");
+}
+
 * {
 
   --lightmode-color-black:#000;
@@ -21,6 +26,10 @@
 
   --font-family:"Inter", Arial, Helvetica, sans-serif;
   font-family: var(--font-family);
+}
+
+.cursive {
+  font-family: "PlayFair Display", serif;
 }
 
 body {

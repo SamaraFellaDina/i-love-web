@@ -1,7 +1,7 @@
 
 <section>
   <h1>Archive</h1>
-  <p>Welcome to my archive. Where you can find journals, notes, projects and even more! Take a look around :-)</p>
+  <p>Welcome to my archive. Where you can find journals, notes, projects and even more! <span class="cursive">Take a look around :-)</span></p>
 </section>
 
 <style>
@@ -16,12 +16,26 @@ section {
   background: var(--lightmode-color-rainbow-gradient);
   animation: gradient 5s ease infinite alternate;
   background-size: 400% 400%;
+
+  position: relative;
 }
 
 section h1 {
-  --heading-margin:.2em;
-  margin-block-start: var(--heading-margin);
-  margin-block-end: var(--heading-margin);
+  bottom: 175px;
+  right: -220px;
+  margin: 6px;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 10em;
+  rotate: -90deg;
+  position: absolute;
+}
+
+section p {
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  left: 20px;
 }
 
 @keyframes gradient {
