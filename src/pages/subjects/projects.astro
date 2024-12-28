@@ -1,46 +1,7 @@
 ---
-import { Layout, Archive } from '../../index.js';
-const data = Archive.archive[0]
-console.log(data.Assets[0])
+import { Layout, SubjectData } from '../../index.js';
 ---
 
 <Layout>
-  <section>
-    <a href="/">back</a>
-    <h1>{data.title}</h1>
-    <p>{data.description}</p>
-
-    <ul>
-      <li>
-        <h2>{data.Assets[0].title}</h2>
-        <p>{data.Assets[0].description}</p>
-        <date>{data.Assets[0].date_created}</date>
-      </li>
-    </ul>
-  </section>
+  <SubjectData />
 </Layout>
-
-<style>
-  section{
-    background: var(--lightmode-color-projects);
-    
-  }
-
-  section ul {
-    background: var(--lightmode-color-black);
-    color: var(--lightmode-color-projects);
-
-
-    display: block;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
-    unicode-bidi: isolate;
-  }
-
-section ul li{
-}
-</style>
