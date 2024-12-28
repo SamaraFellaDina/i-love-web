@@ -10,15 +10,16 @@
 
 * {
 
-  --lightmode-color-black:#000;
+  --lightmode-color-dark:#000;
   --lightmode-color-background: #fff;
-  --lightmode-color-text: var(--lightmode-color-black);
+  --lightmode-color-text: var(--lightmode-color-dark);
 
   --lightmode-color-projects: #B5FFCE;
   --lightmode-color-learning-journal: #FFFA89;
   --lightmode-color-we-love-web:#FFB5F3;
   --lightmode-color-about-me:#C4B5FF;
   --lightmode-color-layout:#EBFF00;
+  
 
   --average-padding: 2em;
 
@@ -54,4 +55,5 @@ h1 {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }

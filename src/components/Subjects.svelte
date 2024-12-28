@@ -53,7 +53,7 @@
 
   ul li{
     --border-style: solid;
-    --border-color: var(--lightmode-color-black);
+    --border-color: var(--lightmode-color-dark);
     --border-width: 2px;
 
     border-top-style: var(--border-style);
@@ -124,7 +124,7 @@
     flex-direction: row;
     justify-content: center;
 
-    background-color: var(--lightmode-color-black);
+    background-color: var(--lightmode-color-dark);
   }
 
 </style>
