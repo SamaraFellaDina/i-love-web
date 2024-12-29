@@ -104,7 +104,6 @@
     display: flex;
     flex-direction: column;
   }
-  
   ul li section h2,
   ul li section p {
     margin: .5em 0;
@@ -131,5 +130,17 @@
 
     background-color: var(--lightmode-color-dark);
   }
+
+  @media (min-width: 600px){
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  ul li {
+    width: 50vw;
+  }
+}
 
 </style>
