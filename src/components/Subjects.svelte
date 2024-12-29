@@ -2,6 +2,11 @@
   import { Archive, Icons } from '../index.js';
   const data = Archive.archive;
 
+  const project = 0;
+  const learningJournal = 1;
+  const weLoveWeb = 2;
+  const aboutMe = 3;
+
   const icons = [
     'book',
     'code',

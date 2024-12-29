@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_28pt-Regular.ttf");
+  font-family: "Inter Variable";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.ttf");
 }
 
 @font-face {
@@ -19,14 +19,17 @@
   --lightmode-color-we-love-web:#FFB5F3;
   --lightmode-color-about-me:#C4B5FF;
   --lightmode-color-layout:#EBFF00;
+  --lightmode-color-hyperlink:#0015ff;
+  --lightmode-color-hyperlink-visited:#000d9e;
   
 
   --average-padding: 2em;
 
   --lightmode-color-rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(249,255,0,1) 25%, rgba(8,129,255,1) 50%, rgba(150,0,255,1) 75%, rgba(252,0,255,1) 100%);
 
-  --font-family:"Inter", Arial, Helvetica, sans-serif;
+  --font-family:"Inter Variable", Arial, Helvetica, sans-serif;
   font-family: var(--font-family);
+  font-weight: 400;
 }
 
 .cursive {
@@ -36,6 +39,17 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  unicode-bidi: isolate;
 }
 
 h1,
@@ -56,4 +70,11 @@ h1 {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: var(--lightmode-color-hyperlink);
+
+}
+
+a:visited,
+a:active {
+  color: var(--lightmode-color-hyperlink-visited);
 }
