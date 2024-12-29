@@ -1,0 +1,110 @@
+{"archive":[
+  {
+    "title":"Projects",
+    "slug":"projects",
+    "description":"All my Github projects can be found here with some more information about the project, code and things like issues",
+    "link":"https://github.com/SamaraFellaDina/future-ready-design",
+    "Assets":[
+      { "title": "Future-Ready-Design",
+        "slug": "Future-Ready-Design",
+        "description":"In this project we're making a website that is meant to scan the accesibility on other sites.",
+        "date_created":"11-11-2024",
+        "keywords":[
+          "SvelteKit",
+          "accesibility",
+          "API",
+          "components",
+          "component-library"
+        ],
+        "Github":{
+          "live_link":"https://future-ready-design.vercel.app/",
+          "link": "https://github.com/SamaraFellaDina/future-ready-design",
+          "Project_board":"https://github.com/users/SamaraFellaDina/projects/15",
+          "issues":"https://github.com/SamaraFellaDina/future-ready-design/issues",
+          "readme":"https://github.com/SamaraFellaDina/future-ready-design/blob/main/README.md",
+          "code":"https://github.com/SamaraFellaDina/future-ready-design"
+        }
+      },
+
+      { "title": "choices-choices-the-tech-stack",
+        "slug": "choices-choices-the-tech-stack",
+        "description":"This project we started working on accesdash. Later on, we continue to work on it at the new project called: <a>Future-Ready-Design</a>. In this project we focused on the framework and learned more about working with SvelteKit. In this project we also learned more about working together in combination with SvelteKit and Github. That means we learned more about branches, pull-request, and more",
+        "date_created":"x",
+        "keywords":[
+          "SvelteKit",
+          "Collaboration",
+          "Components",
+          "Style Guide"
+        ],
+        "Github":{
+          "live_link":"https://choices-choices-the-tech-stack-seven.vercel.app/",
+          "link": "https://github.com/SamaraFellaDina/choices-choices-the-tech-stack",
+          "Project_board":"https://github.com/users/SamaraFellaDina/projects/16",
+          "issues":"https://github.com/SamaraFellaDina/choices-choices-the-tech-stack/issues",
+          "readme":"https://github.com/SamaraFellaDina/choices-choices-the-tech-stack/blob/main/README.md",
+          "code":"https://github.com/SamaraFellaDina/choices-choices-the-tech-stack"
+        }
+      },
+
+      {"title-of-project": {
+        "description":"x",
+            "date_created":"x",
+        "keywords":[
+          "x",
+          "x",
+          "x",
+          "x",
+          "x"
+        ],
+        "Github":{
+          "live_link":"x",
+          "link": "x",
+          "Project_board":"x",
+          "issues":"x",
+          "readme":"x",
+          "code":"x"
+        }
+      }}
+    ]
+  },
+
+  {
+    "title":"Learning Journal",
+    "slug":"learning-journal",
+    "description":"A daily to weekly journal about my progress inside the projects.",
+    "Assets":[
+      {"title": "Justus Babbel | User needs",
+        "description":"x",
+        "date_created":"04-12-2024",
+        "markdown":"",
+        "original-link":"https://github.com/SamaraFellaDina/i-love-web/issues/130"
+      }
+    ]
+  },
+
+  {
+    "title":"We Love Web",
+    "slug":"we-love-web",
+    "description":"The place to find about presentations and the learning envenvironment  outside of the material that has been given by school",
+    "Assets":[
+      {"title": "x",
+        "description":"x",
+        "date_created":"11-11-2024",
+        "markdown":""
+      }
+    ]
+  },
+
+  {
+    "title":"About me",
+    "slug":"about-me",
+    "description":"Who is the person behind all of this? Find more here!",
+    "Assets":[
+      {"title": {
+        "description":"x",
+        "date_created":"11-11-2024",
+        "markdown":""
+      }}
+    ]
+  }
+]}
