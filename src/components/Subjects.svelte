@@ -18,18 +18,18 @@
 <ul>
   {#each data as {title, description, slug}, index}
     <li>
-      <div>
-        <Icons 
-        Name ={icons[index]}
-        Color = 'var(--lightmode-color-background)'
-        Height = '70'
-        Width = '70'
-        />
-      </div>
-
       <section>
         <h2>{title}.</h2>
         <p>{description}</p>
+
+        <div>
+          <Icons 
+          Name ={icons[index]}
+          Color = 'var(--lightmode-color-dark)'
+          Height = '70'
+          Width = '70'
+          />
+        </div>
       </section>
 
       <a href="/subjects/{slug}">
