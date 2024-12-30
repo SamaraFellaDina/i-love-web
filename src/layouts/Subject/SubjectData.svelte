@@ -1,17 +1,14 @@
 <script>
-import {Archive, Github_Hyperlinks, Keywords } from '../../index.js';
+import {Archive, Github_Hyperlinks, Keywords, Intro } from '../../index.js';
 const data = Archive.archive[0]
 console.log(data.Assets)
 </script>
 
 <section>
-  <h1>{data.title}.</h1>
-  <article>
-    <a href="/">back</a>
-    <p>{data.description}</p>
-  </article>
+
 
   <ul>
+    <Intro {data} />
     {#each data.Assets as {title, description, keywords, Github}}
     <li>
 
@@ -46,15 +43,6 @@ console.log(data.Assets)
     position: relative;
   }
 
-  section h1 {
-    margin-block: 0;
-    margin: -30px -10px;
-    width:100%
-  }
-
-  section article {
-    padding: var(--average-padding)
-  }
   section ul {
     background: var(--lightmode-color-projects);
     color: var(--lightmode-color-dark);
@@ -66,7 +54,6 @@ console.log(data.Assets)
     color: var(--lightmode-color-projects);
     padding: var(--average-padding) 0.5em;
     transition: 500ms ease-in;
-    border: .5em solid var(--lightmode-color-projects);
     font-weight: 300;
     letter-spacing: .1em;
 }
@@ -79,7 +66,7 @@ section ul li details summary:hover {
 }
 
 section ul li details div {
-  padding: 0 var(--average-padding);
+  padding: var(--average-padding);
 }
 
 

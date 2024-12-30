@@ -1,5 +1,5 @@
 <script>
-  import { Icons } from '../index';
+  import { Icons } from '../../index';
   export let Github
 </script>
 

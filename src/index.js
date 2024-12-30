@@ -1,8 +1,10 @@
 export { default as Footer } from './Layouts/Footer.svelte'
 export { default as Header } from './Layouts/Header.svelte'
+
 export { default as SubjectData} from './layouts/Subject/SubjectData.svelte'
-export { default as Github_Hyperlinks} from './components/Github_Hyperlinks.svelte'
-export { default as Keywords} from './components/Keywords.svelte'
+export { default as Github_Hyperlinks} from './layouts/Subject/Github_Hyperlinks.svelte'
+export { default as Intro} from './layouts/Subject/Intro.svelte'
+export { default as Keywords} from './layouts/Subject/Keywords.svelte'
 
 
 
