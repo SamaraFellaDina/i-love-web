@@ -69,7 +69,7 @@
     min-height: 20em;
 
   }
-
+  
   ul li:nth-child(1){
     background: var( --lightmode-color-projects);
   }
@@ -139,7 +139,18 @@
   }
 
   ul li {
+    --border-top: 0 0 0 var(--border-width);
+    box-shadow: var(--border-top);
     width: 50vw;
+  }
+
+  ul li:nth-child(3),
+  ul li:nth-child(4){
+    border: none;
+  }
+
+  ul li section h2 {
+    font-size: 2em;
   }
 }
 
