@@ -1,14 +1,11 @@
 <script>
 import {Archive, Github_Hyperlinks, Keywords, Intro } from '../../index.js';
 const data = Archive.archive[0]
-console.log(data.Assets)
 </script>
 
 <section>
-
-
+  <Intro {data} />
   <ul>
-    <Intro {data} />
     {#each data.Assets as {title, description, keywords, Github}}
     <li>
 
