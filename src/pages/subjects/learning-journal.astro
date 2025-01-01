@@ -1,7 +1,19 @@
 ---
-import { Layout, LearningJournal } from '../../index.js';
----
+import { Layout, Intro, Details, Archive } from '../../index.js';
+const data = Archive.archive[1]
 
+---
 <Layout>
-  <LearningJournal />
+  <section>
+    <Intro {data} />
+    <Details {data} />
+  </section>
 </Layout>
+
+<style>
+  section {
+  background: var(--lightmode-color-learning-journal);
+  width: 100vw;
+  position: relative;
+}
+</style>
