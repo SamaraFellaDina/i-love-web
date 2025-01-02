@@ -1,0 +1,17 @@
+---
+import { Layout, Archive, Intro, Details  } from '../../index.js';
+const data = Archive.archive[2]
+---
+
+<Layout>
+  <section>
+    <Intro {data}/>
+    <Details {data} />
+  </section>
+</Layout>
+
+<style>
+    * {
+    background: var(--lightmode-color-projects);
+  }
+</style>
