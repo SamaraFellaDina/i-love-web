@@ -1,5 +1,5 @@
 <script>
-  import { Github_Hyperlinks, Keywords } from '../../index.js'
+  import { Github_Hyperlinks, Keywords, MarkdownDisplay } from '../../index.js'
   export let data
   let title = data.title
 
@@ -34,21 +34,21 @@
 
 {#if title === 'Learning Journal'}
   <ul>
-    {#each data.Assets as { title, description, keywords, Github }}
+    {#each data.Assets as { title, date_created, original_link }}
       <li>
         <details open>
           <summary>
             {title}
           </summary>
           <div>
-            <Keywords {keywords} />
-            <h2>About this project</h2>
-            <p>{description}</p>
-
-            <h3>Sources</h3>
-            <p>Here you can find all the sources that are being used in this project:</p>
-            {#if Github}
-              <Github_Hyperlinks {Github} />
+            <h2> created on <date>{date_created}</date></h2>
+            <section>
+              <MarkdownDisplay />
+            </section>
+            <h3>Scources</h3>
+            <p>Here you can find all the sources that are being used in this subject:</p>
+            {#if original_link}
+              <Github_Hyperlinks {original_link} />
             {:else}
               <p>No sources available</p>
             {/if}
