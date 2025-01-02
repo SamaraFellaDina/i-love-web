@@ -1,11 +1,11 @@
-export { default as Footer } from './Layouts/Footer.svelte'
-export { default as Header } from './Layouts/Header.svelte'
+export { default as Footer } from './components/Footer.svelte'
+export { default as Header } from './components/Header.svelte'
 
-export { default as Projects} from './layouts/Subject/Projects.svelte'
-export { default as LearningJournal} from './layouts/Subject/LearningJournal.svelte'
-export { default as Github_Hyperlinks} from './layouts/Subject/Github_Hyperlinks.svelte'
-export { default as Intro} from './layouts/Subject/Intro.svelte'
-export { default as Keywords} from './layouts/Subject/Keywords.svelte'
+export { default as Projects} from './components/Subject/Projects.svelte'
+export { default as LearningJournal} from './components/Subject/LearningJournal.svelte'
+export { default as Github_Hyperlinks} from './components/Subject/Github_Hyperlinks.svelte'
+export { default as Intro} from './components/Subject/Intro.svelte'
+export { default as Keywords} from './components/Subject/Keywords.svelte'
 
 export { default as Heading } from './components/Heading.svelte'
 export { default as Subjects } from './components/Subjects.svelte'
