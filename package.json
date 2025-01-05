@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^6.0.1",
     "@astrojs/svelte": "^7.0.1",
     "astro": "^5.0.3",
     "svelte": "^5.9.0",

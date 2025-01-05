@@ -1,7 +1,8 @@
 export { default as Footer } from './components/Footer.svelte'
 export { default as Header } from './components/Header.svelte'
 
-export { default as Projects} from './components/Subject/Projects.svelte'
+export { default as MarkdownDisplay} from './components/Subject/MarkdownDisplay.svelte'
+export { default as Details} from './components/Subject/Details.svelte'
 export { default as LearningJournal} from './components/Subject/LearningJournal.svelte'
 export { default as Github_Hyperlinks} from './components/Subject/Github_Hyperlinks.svelte'
 export { default as Intro} from './components/Subject/Intro.svelte'

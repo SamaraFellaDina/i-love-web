@@ -73,11 +73,12 @@
     "slug":"learning-journal",
     "description":"A daily to weekly journal about my progress inside the projects.",
     "Assets":[
-      {"title": "Justus Babbel | User needs",
+      { "title": "Justus Babbel | User needs",
+        "slug":"justus-babbel-user-needs",
         "description":"x",
         "date_created":"04-12-2024",
-        "markdown":"",
-        "original-link":"https://github.com/SamaraFellaDina/i-love-web/issues/130"
+        "markdown":"/markDown/justus-babbel-user-needs.md",
+        "original_link":"https://github.com/SamaraFellaDina/i-love-web/issues/130"
       }
     ]
   },
