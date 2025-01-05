@@ -1,12 +1,15 @@
 ---
-import { Layout, Archive, Intro, Details  } from '../../index.js';
-const data = Archive.archive[1]
+import { Layout, Archive, Intro, Details, ReadMarkdown } from '../../index.js';
+
+const filePath = 'src/markDown/justus-babbel-user-needs.md';
+const markdownContent = ReadMarkdown(filePath);  // Fetch and convert markdown
+const data = Archive.archive[1];  // Assuming `data` is set correctly
 ---
 
 <Layout>
   <section>
     <Intro {data}/>
-    <Details {data} />
+    <Details {data} markdownContent={markdownContent} />
   </section>
 </Layout>
 

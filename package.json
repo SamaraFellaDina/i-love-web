@@ -12,6 +12,7 @@
     "@astrojs/markdown-remark": "^6.0.1",
     "@astrojs/svelte": "^7.0.1",
     "astro": "^5.0.3",
+    "marked": "^15.0.5",
     "svelte": "^5.9.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.6"

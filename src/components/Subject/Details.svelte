@@ -1,6 +1,9 @@
 <script>
-  import { Github_Hyperlinks, Keywords, MarkdownDisplay } from '../../index.js'
-  export let data
+  import { Github_Hyperlinks, Keywords } from '../../index.js'
+
+  export let markdownContent = '';
+
+  export let data = {};
   let title = data.title
 
 </script>
@@ -42,9 +45,11 @@
           </summary>
           <div>
             <h2> created on <date>{date_created}</date></h2>
-            <section>
-              <MarkdownDisplay />
-            </section>
+            {#if markdownContent}
+            <section class="markdown">{@html markdownContent}</section> 
+            {:else}
+              <p>No markdown content found.</p>
+            {/if}           
             <h3>Scources</h3>
             <p>Here you can find all the sources that are being used in this subject:</p>
             {#if original_link}
@@ -140,4 +145,5 @@
  ul li details div {
   padding: var(--average-padding);
 }
+
 </style>
