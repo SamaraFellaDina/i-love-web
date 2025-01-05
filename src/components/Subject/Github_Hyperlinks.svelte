@@ -1,11 +1,13 @@
 <script>
   import { Icons } from '../../index';
   export let Github
+
   export let original_link
 </script>
 
 {#if Github}
   <ul>
+
     <li>
       <a href={Github.live_link}>
         <Icons Name='link' Width=20 Height=20 Color='var(--lightmode-color-dark)'/> 
@@ -56,4 +58,5 @@
   Original link
 </a>
 {/if}
+
 
