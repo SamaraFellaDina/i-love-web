@@ -21,7 +21,8 @@
   --lightmode-color-layout:#EBFF00;
   --lightmode-color-hyperlink:#0015ff;
   --lightmode-color-hyperlink-visited:#000d9e;
-
+  --lightmode-color-rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(249,255,0,1) 25%, rgba(8,129,255,1) 50%, rgba(150,0,255,1) 75%, rgba(252,0,255,1) 100%);
+  
   --average-padding: 2em;
 
   --markdown-heading-margin-block:.6em;
