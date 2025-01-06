@@ -146,4 +146,8 @@
   padding: var(--average-padding);
 }
 
+.markdown {
+  padding: calc(var(--average-padding)*2) 0;
+}
+
 </style>

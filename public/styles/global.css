@@ -22,7 +22,7 @@
   --lightmode-color-hyperlink:#0015ff;
   --lightmode-color-hyperlink-visited:#000d9e;
   --lightmode-color-rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(249,255,0,1) 25%, rgba(8,129,255,1) 50%, rgba(150,0,255,1) 75%, rgba(252,0,255,1) 100%);
-  
+
   --average-padding: 2em;
 
   --markdown-heading-margin-block:.6em;
@@ -104,12 +104,24 @@ a:active {
 }
 
 .markdown ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: var(--average-padding);
-    margin-inline-end: var(--average-padding);
-    padding-inline-start: 0;
-    unicode-bidi: isolate;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: var(--average-padding);
+  margin-inline-end: var(--average-padding);
+  padding-inline-start: 0;
+  unicode-bidi: isolate;
+}
+
+.markdown blockquote {
+  opacity: 60%;
+  border-left: #000 solid .5em;
+
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  unicode-bidi: isolate;
 }
