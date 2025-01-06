@@ -1,8 +1,9 @@
 ---
 import { Layout, Archive, Intro, Details, ReadMarkdown } from '../../index.js';
 
-const filePath = 'src/markDown/justus-babbel-user-needs.md';
-const markdownContent = ReadMarkdown(filePath);  // Fetch and convert markdown
+let markdownSlug = 'justus-babbel-user-needs'
+const filePath = 'src/markDown/' + markdownSlug + '.md';
+const markdownContent = ReadMarkdown(filePath)  || undefined;  // Fetch and convert markdown
 const data = Archive.archive[1];  // Assuming `data` is set correctly
 ---
 

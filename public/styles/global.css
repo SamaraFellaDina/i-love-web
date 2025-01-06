@@ -21,11 +21,14 @@
   --lightmode-color-layout:#EBFF00;
   --lightmode-color-hyperlink:#0015ff;
   --lightmode-color-hyperlink-visited:#000d9e;
-  
 
   --average-padding: 2em;
 
-  --lightmode-color-rainbow-gradient: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(249,255,0,1) 25%, rgba(8,129,255,1) 50%, rgba(150,0,255,1) 75%, rgba(252,0,255,1) 100%);
+  --markdown-heading-margin-block:.6em;
+  --markdown-h1-font-size:4em;
+  --markdown-h2-font-size:3em;
+  --markdown-h3-font-size:2em;
+
 
   --font-family:"Inter Variable", Arial, Helvetica, sans-serif;
   font-family: var(--font-family);
@@ -77,4 +80,35 @@ a {
 a:visited,
 a:active {
   color: var(--lightmode-color-hyperlink-visited);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5 {
+  margin-block: var(--markdown-heading-margin-block);
+}
+
+.markdown h1 {
+  font-size: var(--markdown-h1-font-size);
+}
+
+.markdown h2 { 
+  font-size: var(--markdown-h2-font-size);
+}
+
+.markdown h3 {
+  font-size: var(--markdown-h3-font-size);
+}
+
+.markdown ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: var(--average-padding);
+    margin-inline-end: var(--average-padding);
+    padding-inline-start: 0;
+    unicode-bidi: isolate;
 }
